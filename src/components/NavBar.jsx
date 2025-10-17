@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaGlobe } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div className="bg-base-100 text-gray-500 sticky top-0 z-50 backdrop-blur-md bg-opacity-80">
+    <div className="bg-base-100 card text-gray-500 sticky top-0 z-50 backdrop-blur-md bg-opacity-80">
       <div className="navbar mx-auto px-4">
         <div className="navbar-start">
           <HashLink smooth to="/#home" className="hidden md:inline-block">

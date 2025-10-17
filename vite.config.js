@@ -12,6 +12,15 @@ export default defineConfig({
   server: {
     host: true
   },
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'card-light': '#ffffff',
+        'card-dark': '#1f2937'
+      }
+    }
+  },
   content: [
     "./src/**/*.{js,jsx,ts,tsx}"
   ]
