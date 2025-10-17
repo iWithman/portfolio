@@ -12,7 +12,7 @@ const Intro = () => {
           </div>
           <div className="intro-image md:w-1/2 flex justify-end mb-4 md:mb-0">
             <img
-              src="/src/assets/iwithman.jpg"
+              src="https://bizhubs3.s3.us-east-1.amazonaws.com/profiles/1760666206407-iwithman.jpg"
               alt="Withman profile"
               className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover border-4 border-orange-500"
             />

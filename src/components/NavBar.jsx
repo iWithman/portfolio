@@ -7,12 +7,12 @@ const Navbar = () => {
     <div className="bg-base-100 text-gray-500 sticky top-0 z-50 backdrop-blur-md bg-opacity-80">
       <div className="navbar mx-auto px-4">
         <div className="navbar-start">
-          <HashLink
-              smooth
-              to="/#home"
-              className="text-orange-500 font-bold text-xl"
-            >
-              iWithman
+          <HashLink smooth to="/#home">
+            <img 
+              src="/iw.svg" 
+              alt="Logo" 
+              className="w-10 h-10"
+            />
           </HashLink>
           <div className="dropdown md:hidden">
             <div
