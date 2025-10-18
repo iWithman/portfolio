@@ -1,6 +1,11 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, emerald;
+}
 
 .card {
-  @apply bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg;
+  @apply bg-white border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg;
 }
+
+
+

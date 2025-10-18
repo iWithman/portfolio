@@ -44,7 +44,7 @@ const Projects = () => {
                 <img
                   src={project.imageUrl}
                   alt={project.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 border-b border-gray-200 object-cover"
                 />
               </figure>
 
@@ -81,7 +81,7 @@ const Projects = () => {
                     href={project.livePreview}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-2 text-primary text-sm underline flex items-center gap-2"
+                    className="mt-2 text-orange-600 text-sm underline flex items-center gap-2"
                     onClick={(e) => e.stopPropagation()}
                   >
                     <FaLink /> Live Preview

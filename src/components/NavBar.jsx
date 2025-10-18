@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
-import { FaGithub, FaLinkedin, FaGlobe } from "react-icons/fa";
+import SocialNetworks from "../common/SocialNetworks";
 
 const Navbar = () => {
   return (
     <div className="bg-base-100 card text-gray-500 sticky top-0 z-50 backdrop-blur-md bg-opacity-80">
-      <div className="navbar mx-auto px-4">
+      <div className="navbar max-w-screen-lg mx-auto px-4">
         <div className="navbar-start">
           <HashLink smooth to="/#home" className="hidden md:inline-block">
             <img 
@@ -70,57 +70,34 @@ const Navbar = () => {
             <HashLink
               smooth
               to="/#intro"
-              className="text-gray-500 hover:text-primary"
+              className="text-gray-500 hover:text-orange-400"
             >
               Home
             </HashLink>
-            <Link to="/about" className="text-gray-500 hover:text-primary">
+            <Link to="/about" className="text-gray-500 hover:text-orange-400">
               About
             </Link>
             <HashLink
               smooth
               to="/#tech-stack"
-              className="text-gray-500 hover:text-primary"
+              className="text-gray-500 hover:text-orange-400"
             >
               Tech Stack
             </HashLink>
             <HashLink
               smooth
               to="/#projects"
-              className="text-gray-500 hover:text-primary"
+              className="text-gray-500 hover:text-orange-400"
             >
               Projects
             </HashLink>
-            <Link to="/contact" className="text-gray-500 hover:text-primary">
+            <Link to="/contact" className="text-gray-500 hover:text-orange-400">
               Contact
             </Link>
           </div>
 
           <div className="flex gap-4 text-xl">
-            <a
-              href="https://github.com/iwithman"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-primary transition-colors"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://linkedin.com/in/withman-s-15a74615b"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-primary transition-colors"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="https://wsp.iwithman.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-primary transition-colors"
-            >
-              <FaGlobe />
-            </a>
+            <SocialNetworks isNavBar={true} />
           </div>
         </div>
       </div>

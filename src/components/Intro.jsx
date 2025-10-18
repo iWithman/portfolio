@@ -6,7 +6,7 @@ const Intro = () => {
           <div className="intro-text md:w-1/2 text-center md:text-left">
             <h1 className="text-xl md:text-3xl font-bold mb-4 leading-tight">
               Hi, I am
-              <span className="block text-orange-500">Withman S.</span>
+              <span className="block text-orange-400">Withman</span>
               <span className="block">I create solutions that make life easier through code.</span>
             </h1>
           </div>
